@@ -17,21 +17,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lD7-ee-dk2">
-                                <rect key="frame" x="132" y="59" width="128" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.29803921568627451" green="0.031372549019607843" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ngQ-pe-oHt">
-                                <rect key="frame" x="132" y="211" width="128" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.30588235294117649" green="0.29803921568627451" blue="0.0039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qHi-7O-byd">
-                                <rect key="frame" x="132" y="363" width="128" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.29411764705882354" blue="0.0039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="FVg-iI-Zfe">
+                                <rect key="frame" x="132.66666666666663" y="78.666666666666686" width="128" height="432"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lD7-ee-dk2">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <color key="backgroundColor" red="0.29803921568627451" green="0.031372549019607843" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="lD7-ee-dk2" secondAttribute="height" multiplier="1:1" id="2qt-Pl-LKb"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ngQ-pe-oHt">
+                                        <rect key="frame" x="0.0" y="152" width="128" height="128"/>
+                                        <color key="backgroundColor" red="0.30588235294117649" green="0.29803921568627451" blue="0.0039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ngQ-pe-oHt" secondAttribute="height" multiplier="1:1" id="KpX-6U-kyD"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qHi-7O-byd">
+                                        <rect key="frame" x="0.0" y="304" width="128" height="128"/>
+                                        <color key="backgroundColor" red="0.0" green="0.29411764705882354" blue="0.0039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="qHi-7O-byd" secondAttribute="height" multiplier="1:1" id="uax-gv-QbD"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yy5-dm-MhJ">
                                 <rect key="frame" x="130.66666666666666" y="686.66666666666663" width="131.99999999999997" height="57"/>
                                 <color key="backgroundColor" name="AccentColor"/>
@@ -49,8 +60,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="FVg-iI-Zfe" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="32:213" id="Gp1-Jn-ec7"/>
                             <constraint firstItem="Yy5-dm-MhJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bEU-ts-duv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Yy5-dm-MhJ" secondAttribute="bottom" multiplier="1.1" id="gbb-3H-V3Z"/>
+                            <constraint firstItem="FVg-iI-Zfe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l3o-jo-EUj"/>
+                            <constraint firstItem="FVg-iI-Zfe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" multiplier="4:3" id="wMs-jm-MgK"/>
                         </constraints>
                     </view>
                 </viewController>
