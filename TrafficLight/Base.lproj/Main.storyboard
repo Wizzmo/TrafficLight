@@ -55,6 +55,10 @@
                                 <state key="normal" title="START">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="changeLight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rqZ-mr-Bmw"/>
+                                    <action selector="changeTitleOfButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jfi-oY-msx"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
