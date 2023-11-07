@@ -9,7 +9,7 @@ import UIKit
 
 final class ViewController: UIViewController {
     
-    var count = 1
+    var currentLight = 0
     
     @IBOutlet var redLightView: UIView!
     @IBOutlet var yellowLightView: UIView!
@@ -26,24 +26,24 @@ final class ViewController: UIViewController {
         changeLightButton.layer.cornerRadius = 10
     }
     
-    @IBAction func changeTitleOfButton(_ sender: UIButton) {
-        changeLightButton.setTitle("NEXT", for: .normal)
-    }
-    
-    @IBAction func changeLight(_ sender: UIButton) {
-        if count == 1 {
+    @IBAction func changeLightButtonDidTapped(_ sender: UIButton) {
+        switch currentLight {
+        case 0:
+            changeLightButton.setTitle("NEXT", for: .normal)
+            currentLight += 1
+            fallthrough
+        case 1:
             redLightView.alpha = 1.0
             greenLightView.alpha = 0.5
-            count += 1
-        } else if count == 2 {
+            currentLight += 1
+        case 2:
             yellowLightView.alpha = 1.0
             redLightView.alpha = 0.5
-            count += 1
-        } else {
+            currentLight += 1
+        default:
             greenLightView.alpha = 1.0
             yellowLightView.alpha = 0.5
-            count = 1
+            currentLight = 1
         }
     }
 }
-
