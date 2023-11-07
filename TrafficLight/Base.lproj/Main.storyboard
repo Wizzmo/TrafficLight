@@ -44,10 +44,10 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yy5-dm-MhJ">
-                                <rect key="frame" x="130.66666666666666" y="686.66666666666663" width="131.99999999999997" height="57"/>
+                                <rect key="frame" x="106.66666666666669" y="686.66666666666663" width="180" height="57"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="131.99999999999997" id="rwA-AI-ghX"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="rwA-AI-ghX"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <inset key="contentEdgeInsets" minX="16" minY="8" maxX="16" maxY="8"/>
