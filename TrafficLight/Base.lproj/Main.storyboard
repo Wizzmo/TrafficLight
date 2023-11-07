@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="FVg-iI-Zfe">
-                                <rect key="frame" x="132.66666666666663" y="78.666666666666686" width="128" height="432"/>
+                                <rect key="frame" x="132.66666666666666" y="78.666666666666686" width="127.99999999999997" height="432"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lD7-ee-dk2">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
@@ -67,6 +67,12 @@
                             <constraint firstItem="FVg-iI-Zfe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" multiplier="4:3" id="wMs-jm-MgK"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="changeLightButton" destination="Yy5-dm-MhJ" id="Xol-SN-qBj"/>
+                        <outlet property="greenLightView" destination="qHi-7O-byd" id="dMU-Ps-Rbb"/>
+                        <outlet property="redLightView" destination="lD7-ee-dk2" id="CcB-Ie-tbk"/>
+                        <outlet property="yellowLightView" destination="ngQ-pe-oHt" id="9Oq-jl-x7s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
