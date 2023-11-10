@@ -9,29 +9,29 @@ import UIKit
 
 final class ViewController: UIViewController {
     
-    var currentLight = 0
-    
     @IBOutlet var redLightView: UIView!
     @IBOutlet var yellowLightView: UIView!
     @IBOutlet var greenLightView: UIView!
     
     @IBOutlet var changeLightButton: UIButton!
     
+    private var currentLight = 1
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        redLightView.layer.cornerRadius = 64
-        yellowLightView.layer.cornerRadius = 64
-        greenLightView.layer.cornerRadius = 64
+        redLightView.layer.cornerRadius = redLightView.frame.width / 2
+        yellowLightView.layer.cornerRadius = yellowLightView.frame.width / 2
+        greenLightView.layer.cornerRadius = greenLightView.frame.width / 2
         
         changeLightButton.layer.cornerRadius = 10
     }
     
-    @IBAction func changeLightButtonDidTapped(_ sender: UIButton) {
+    @IBAction func changeNameOfButton() {
+        changeLightButton.setTitle("NEXT", for: .normal)
+        }
+    
+    @IBAction func changeLightButtonDidTapped() {
         switch currentLight {
-        case 0:
-            changeLightButton.setTitle("NEXT", for: .normal)
-            currentLight += 1
-            fallthrough
         case 1:
             redLightView.alpha = 1.0
             greenLightView.alpha = 0.5

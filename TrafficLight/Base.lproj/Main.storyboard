@@ -59,7 +59,8 @@
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
                                         <connections>
-                                            <action selector="changeLightButtonDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eyb-ly-y4I"/>
+                                            <action selector="changeLightButtonDidTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y9n-QS-Haf"/>
+                                            <action selector="changeNameOfButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="XjL-fI-RU6"/>
                                         </connections>
                                     </button>
                                 </subviews>
