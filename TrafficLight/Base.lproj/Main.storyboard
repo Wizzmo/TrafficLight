@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait" appearance="dark"/>
+    <device id="retina4_7" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -14,32 +14,31 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrafficLight" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="FVg-iI-Zfe">
-                                <rect key="frame" x="111" y="60" width="98.5" height="375.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="tEl-tw-wZV">
+                                <rect key="frame" x="127.5" y="60" width="120" height="441"/>
                                 <subviews>
                                     <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lD7-ee-dk2">
-                                        <rect key="frame" x="0.0" y="0.0" width="98.5" height="98.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120.5"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                     </view>
                                     <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ngQ-pe-oHt">
-                                        <rect key="frame" x="0.0" y="138.5" width="98.5" height="98.5"/>
+                                        <rect key="frame" x="0.0" y="160.5" width="120" height="120"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                     </view>
                                     <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qHi-7O-byd">
-                                        <rect key="frame" x="0.0" y="277" width="98.5" height="98.5"/>
+                                        <rect key="frame" x="0.0" y="320.5" width="120" height="120.5"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="98.5" id="aYM-hv-N7p"/>
-                                    <constraint firstAttribute="height" constant="375.5" id="bZT-xL-VpK"/>
+                                    <constraint firstAttribute="width" secondItem="lD7-ee-dk2" secondAttribute="height" multiplier="1:1" id="bvn-Oq-WAy"/>
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yy5-dm-MhJ">
-                                <rect key="frame" x="94" y="471" width="132" height="57"/>
+                                <rect key="frame" x="110" y="570" width="155" height="57"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <inset key="contentEdgeInsets" minX="16" minY="8" maxX="16" maxY="8"/>
@@ -49,7 +48,6 @@
                                 </state>
                                 <connections>
                                     <action selector="changeLightButtonDidTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y9n-QS-Haf"/>
-                                    <action selector="changeNameOfButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="XjL-fI-RU6"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -57,10 +55,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Yy5-dm-MhJ" secondAttribute="bottom" constant="40" id="42P-W6-Y9i"/>
-                            <constraint firstItem="FVg-iI-Zfe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="Dqv-mv-vwf"/>
                             <constraint firstItem="Yy5-dm-MhJ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="33:142" id="dhF-nl-wXI"/>
+                            <constraint firstItem="tEl-tw-wZV" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.661092" id="hAT-jf-Unf"/>
+                            <constraint firstItem="tEl-tw-wZV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m3u-Au-UcZ"/>
                             <constraint firstItem="Yy5-dm-MhJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wws-CW-m41"/>
-                            <constraint firstItem="FVg-iI-Zfe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zQ8-cF-LjH"/>
+                            <constraint firstItem="tEl-tw-wZV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="x5G-yT-FOC"/>
                         </constraints>
                     </view>
                     <connections>
